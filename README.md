@@ -12,20 +12,50 @@ MY_APP_Code = "your app code"
 
 ## Using the Service
 
-The class method GeoCode can be used to retrieve the coordinates of an address by passing the address as an argument
+From the command line type
 
 ```
-object.GeoCode("enter your address here")
+python demo.py
+```
+The above will prompt user to enter an address. Once an address is input the matching co ordinates are displayed and the user is prompted to enter another address.
+Type exit to terminate the program
+
+## Sample input 1
+```
+Enter the Address:
+955 Escalon Avenue
 ```
 
-The file demo.py has example lines of code
-
-
-## Alternate way
-
-You may also decode multiple addresses one at a time by using the Run classmethod
-
+## Output 1
 ```
-object.GeoCode.Run()
+Using Geocoding service by HERE...
+No. of matches found:  1
+
+Match 1 of 1
+Latitude:  20.7462433
+Longitude:  -103.3537606 
 ```
-Using the above method will prompt user to enter the address and retrieve co ordinates continuously until the user types exit
+
+## Sample input 2
+```
+Enter the Address:
+Sunnyvale
+```
+
+## Output 2
+```
+Using Geocoding service by HERE...
+No. of matches found:  3
+
+Match 1 of 3
+Latitude:  37.37172
+Longitude:  -122.03801
+
+Match 2 of 3
+Latitude:  32.78034
+Longitude:  -96.54741
+
+Match 3 of 3
+Latitude:  -34.1769
+Longitude:  137.84631
+```
