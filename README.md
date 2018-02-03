@@ -1,8 +1,31 @@
 # Geocoding-Service
-This service resolves the latitude and longitude for that address by using geocoding services by Google API and HERE
+This service resolves the latitude and longitude for that address by using geocoding service APIs of Google and HERE
+HERE APIs are used as primary service and Google maps is the back up API service. If there are multiple matches all of them are displayed with HERE and only the best match is displayed with Google API.
 
-This repo contains 2 files GeoCode.py and demo.py
-GeoCode is the module that contains the class and the corresponding class methods' definitions. demo.py is an example implementation for anyone who wants to use this service.
-There are 2 ways to use this service -
-  Send one address at a time, as an argument to GeoCode and watch the result displayed on console after which the program execution ends
-  Another way is to use the Run() function which takes no arguments and keeps executing requests until the user types the word exit
+## Requirements
+* **Python 3**
+
+## Using your APIs
+Create a python file called config and fill in your HERE APIs as
+MY_APP_ID = "your app id"
+MY_APP_Code = "your app code"
+
+## Using the Service
+
+The class method GeoCode can be used to retrieve the coordinates of an address by passing the address as an argument
+
+'''
+object.Geocode("enter your address here")
+'''
+
+The file demo.py has an example line of code
+
+
+## Alternate way
+
+You may also decode multiple addresses one at a time by using the Run classmethod
+
+'''
+object.GeoCode.Run()
+'''
+Using the above method will prompt user to enter the address and retrieve co ordinates continuously until the user types exit

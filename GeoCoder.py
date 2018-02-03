@@ -3,7 +3,7 @@ import requests
 import config
 
 # define class
-class GeoCode:
+class GeoCoder:
 
     # define the primary and secondary apis that will be used
     # variables below are class variables
