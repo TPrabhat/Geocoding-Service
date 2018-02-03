@@ -99,15 +99,3 @@ class GeoCoder:
                 except Exception:
 
                     print("Sorry, No Results found for your address")
-
-    def Run(self):
-
-        while True:
-
-            self.address = input("Enter the Address:\n")
-
-            if self.address == 'exit':
-                print("Thank you")
-                break
-
-            self.GeoCode(self.address)

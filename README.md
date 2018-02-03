@@ -14,18 +14,18 @@ MY_APP_Code = "your app code"
 
 The class method GeoCode can be used to retrieve the coordinates of an address by passing the address as an argument
 
-'''
-object.Geocode("enter your address here")
-'''
+```
+object.GeoCode("enter your address here")
+```
 
-The file demo.py has an example line of code
+The file demo.py has example lines of code
 
 
 ## Alternate way
 
 You may also decode multiple addresses one at a time by using the Run classmethod
 
-'''
+```
 object.GeoCode.Run()
-'''
+```
 Using the above method will prompt user to enter the address and retrieve co ordinates continuously until the user types exit
