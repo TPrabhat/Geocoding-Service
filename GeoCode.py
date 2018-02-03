@@ -1,6 +1,6 @@
 # import teh module to generate the request
 import requests
-
+import config
 
 # define class
 class GeoCode:
@@ -11,8 +11,8 @@ class GeoCode:
     secondary_api = "https://maps.googleapis.com/maps/api/geocode/json"
 
     # below are the parameters required to use the "here" api
-    APP_ID = "<your app id>"
-    APP_Code = "<your app code>"
+    APP_ID = config.MY_APP_ID
+    APP_Code = config.MY_APP_Code
 
     def __init__(self):
         pass
