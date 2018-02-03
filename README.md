@@ -9,6 +9,7 @@ HERE APIs are used as primary service and Google maps is the back up API service
 Create a python file called config and fill in your HERE APIs as__
 
 MY_APP_ID = "your app id"__
+
 MY_APP_Code = "your app code"
 
 ## Using the Service
