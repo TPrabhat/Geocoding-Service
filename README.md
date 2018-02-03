@@ -4,6 +4,7 @@ HERE APIs are used as primary service and Google maps is the back up API service
 
 ## Requirements
 * **Python 3**
+* **HERE API keys**
 
 ## Using your APIs
 Create a python file called config and fill in your HERE APIs as__
